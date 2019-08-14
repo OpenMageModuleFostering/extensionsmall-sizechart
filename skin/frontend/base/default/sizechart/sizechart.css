@@ -1,3 +1,59 @@
+.modal-popup {
+    bottom: 0;
+    left: 0;
+    min-width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    border-radius: 25px;
+    overflow-y: auto;
+}
+.modal-popup._show {
+    visibility: visible;
+}
+.modal-popup .modal-inner-wrap {
+    box-sizing: border-box;
+    /* display: flex;
+     flex-direction: column;*/
+    border-radius: 5px;
+    height: auto;
+    left: 0;
+    margin: 5rem auto;
+    position: absolute;
+    right: 0;
+    transform: translateY(-200%);
+    transition-duration: 0.5s;
+    transition-property: transform, visibility;
+    transition-timing-function: ease;
+    width: 600px;
+    max-width: 98%;
+    //    margin: 1%;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-popup._show .modal-inner-wrap {
+    transform: translateY(0px);
+}
+.modal-popup .modal-content {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+.modals-overlay {
+    background-color: rgba(51, 51, 51, 0.55);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+
 #sizechartbutton{
     position: absolute;
     top: 5px;
@@ -102,7 +158,7 @@
     font-weight: bold;
 }
 .sizechart-credits {
-  clear: both;
-  float: left;
-  font-size: 8px;
+    clear: both;
+    float: left;
+    font-size: 8px;
 }

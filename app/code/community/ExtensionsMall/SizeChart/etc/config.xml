@@ -2,7 +2,7 @@
 <config>
     <modules>
         <ExtensionsMall_SizeChart>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </ExtensionsMall_SizeChart>
     </modules>
     <global>
@@ -87,11 +87,6 @@
                 <enabled>1</enabled>
                 <sizechart_table_heading_color>#3399CC</sizechart_table_heading_color>
             </style>
-            <general>
-                <enabled>1</enabled>
-                <include_jquery>0</include_jquery>
-                <include_fancybox>0</include_fancybox>
-            </general>
         </sizechart_options>
     </default>
     <!--	END DEFAULTS	-->
